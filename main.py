@@ -41,7 +41,7 @@ class TasheelModel(nn.Module):
         #x = self.softmax(x)
         return x
 model = TasheelModel(len(char_to_idx), len(diac_to_idx)).cpu()
-model = torch.load("model-1-7100.pth", map_location=torch.device('cpu'))
+model = torch.load("model-1-8500.pth", map_location=torch.device('cpu'))
 
 def predict(sentence):
     sequence_length = torch.tensor([len(sentence)]).cpu()
@@ -185,7 +185,7 @@ with col1:
 col1, col2, col3 = st.columns([1.6,1,1])
 
 with col2:
-    if st.button("تنفيذ التنبؤ", key="predict_btn"):
+    if st.button("شكل", key="predict_btn"):
         text = st.session_state.input_text.strip()
         if text:
             st.session_state.predicted_text = predict(text)  # model call
