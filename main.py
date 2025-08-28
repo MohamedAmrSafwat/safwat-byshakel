@@ -177,11 +177,11 @@ if "predicted_text" not in st.session_state:
 
 with col2:
     st.markdown("### النص الأصلي")
-    st.session_state.input_text = st.text_area("أدخل النص هنا", value=st.session_state.input_text, height=400, placeholder="اكتب نصك...")    
+    st.session_state.input_text = st.text_area("أدخل النص هنا", value=st.session_state.input_text, height=350, placeholder="اكتب نصك...")    
 
 with col1:
     st.markdown("### النص الناتج")
-    st.text_area("الناتج", value=st.session_state.predicted_text, height=400, key="readonly_output", disabled=True, placeholder="بانتظار إدخال النص...")
+    st.text_area("الناتج", value=st.session_state.predicted_text, height=350, key="readonly_output", disabled=True, placeholder="بانتظار إدخال النص...")
 
 # Predict button centered
 col1, col2, col3 = st.columns([1.4,1,1])
