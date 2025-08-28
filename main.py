@@ -76,7 +76,9 @@ st.markdown(
     <style>
         /* Remove extra bottom padding */
         .block-container {
-            padding: 0rem 1rem 0rem 1rem;
+            paddign-bottom: 0rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
         }
 
         /* Title styling */
