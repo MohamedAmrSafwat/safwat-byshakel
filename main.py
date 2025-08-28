@@ -1,7 +1,4 @@
 import streamlit as st
-import sys
-print(sys.executable)
-
 # model definition and the predict function
 
 import torch
