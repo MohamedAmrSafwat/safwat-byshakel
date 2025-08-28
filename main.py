@@ -76,7 +76,7 @@ st.markdown(
     <style>
         /* Remove extra bottom padding */
         .block-container {
-            padding-bottom: 0rem;
+            padding: 0rem 1rem 0rem 1rem;
         }
 
         /* Title styling */
@@ -138,7 +138,7 @@ st.markdown(
             font-family: 'Cairo', sans-serif !important;
             direction: rtl !important;
             text-align: right !important;
-            padding-right: 10px !important;
+            padding-right: 20px !important;
             box-shadow: 0px 3px 10px rgba(0, 77, 0, 0.2) !important;
         }
 
@@ -182,7 +182,7 @@ with col1:
     st.text_area("الناتج", value=st.session_state.predicted_text, height=400, key="readonly_output", disabled=True, placeholder="بانتظار إدخال النص...")
 
 # Predict button centered
-col1, col2, col3 = st.columns([1.6,1,1])
+col1, col2, col3 = st.columns([1.4,1,1])
 
 with col2:
     if st.button("شكل", key="predict_btn"):
