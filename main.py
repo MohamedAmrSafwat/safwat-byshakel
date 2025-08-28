@@ -81,7 +81,7 @@ st.markdown(
 
         /* Title styling */
         h1 {
-            font-size: 70px !important;
+            font-size: 100px !important;
             font-weight: bold;
             font-family: 'Cairo', sans-serif;
             color: #004d00; /* dark green */
@@ -92,7 +92,7 @@ st.markdown(
         div.stButton > button:first-child {
             background: linear-gradient(135deg, #66ff99, #99ffcc);
             color: #004d00;
-            font-size: 22px;
+            font-size: 40px;
             padding: 18px 45px;
             border-radius: 12px;
             border: 2px solid #004d00;
@@ -175,11 +175,11 @@ if "predicted_text" not in st.session_state:
 
 with col2:
     st.markdown("### النص الأصلي")
-    st.session_state.input_text = st.text_area("أدخل النص هنا", value=st.session_state.input_text, height=300, placeholder="اكتب نصك...")    
+    st.session_state.input_text = st.text_area("أدخل النص هنا", value=st.session_state.input_text, height=400, placeholder="اكتب نصك...")    
 
 with col1:
     st.markdown("### النص الناتج")
-    st.text_area("الناتج", value=st.session_state.predicted_text, height=300, key="readonly_output", disabled=True, placeholder="بانتظار إدخال النص...")
+    st.text_area("الناتج", value=st.session_state.predicted_text, height=400, key="readonly_output", disabled=True, placeholder="بانتظار إدخال النص...")
 
 # Predict button centered
 col1, col2, col3 = st.columns([1.6,1,1])
