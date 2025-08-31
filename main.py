@@ -41,7 +41,7 @@ class TasheelModel(nn.Module):
         #x = self.softmax(x)
         return x
 model = TasheelModel(len(char_to_idx), len(diac_to_idx)).cpu()
-model = torch.load("model-1-8500.pth", map_location=torch.device('cpu'))
+model = torch.load("model-2.pth", map_location=torch.device('cpu'))
 
 def predict(sentence):
     sequence_length = torch.tensor([len(sentence)]).cpu()
