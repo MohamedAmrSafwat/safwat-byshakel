@@ -160,7 +160,7 @@ st.markdown(
 st.markdown(
     """
     <h1 style='text-align: center; margin-top: -50px;'>
-        صَفْوَت بِيِشْكِل
+        تَشْكِيلُ اللُّغَةِ العَرَبِيَّةِ
     </h1>
     """,
     unsafe_allow_html=True
